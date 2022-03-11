@@ -33,4 +33,12 @@ public class Complexe
     {
         return new Complexe(h1.reel+h2.reel, h1.imaginaire+h2.imaginaire);
     }
+    public Complexe conjuguer(Complexe z)
+    {
+        return new Complexe(z.reel, -z.imaginaire);
+    }
+    public Complexe soustraction(Complexe a1, Complexe a2)
+    {
+        return new Complexe(a1.reel-a2.reel, a1.imaginaire-a2.imaginaire);
+    }
 }
