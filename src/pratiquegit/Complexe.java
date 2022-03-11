@@ -29,4 +29,8 @@ public class Complexe
     {
         return new Complexe(-z.reel, -z.imaginaire);
     }
+    public Complexe addition(Complexe h1 , Complexe h2)
+    {
+        return new Complexe(h1.reel+h2.reel, h1.imaginaire+h2.imaginaire);
+    }
 }
