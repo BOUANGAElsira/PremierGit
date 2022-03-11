@@ -1,13 +1,32 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package pratiquegit;
 
-/**
- *
- * @author Elsira
- */
-public class Complexe {
-    
+public class Complexe 
+{
+    private double reel;
+    private double imaginaire;
+
+    public Complexe(double reel, double imaginaire) {
+        this.reel = reel;
+        this.imaginaire = imaginaire;
+    }
+
+    public Complexe() {
+    }
+
+    public double getReel() {
+        return reel;
+    }
+
+    public double getImaginaire() {
+        return imaginaire;
+    }
+
+    @Override
+    public String toString() {
+        return "Complexe{" + "reel=" + reel + ", imaginaire=" + imaginaire + '}';
+    }
+    public Complexe opposer(Complexe z)
+    {
+        return new Complexe(-z.reel, -z.imaginaire);
+    }
 }
